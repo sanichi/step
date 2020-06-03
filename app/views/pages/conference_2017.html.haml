@@ -1,1 +1,14 @@
 - set_meta_tags title: t("conference.title", year: 2017), description: t("conference.description", year: 2017), keywords: t("conference.keywords", year: 2017)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2017)
+    %p.text-center Stirling, 18th March
+    %p.text-center
+      = link_to "2016", conference_2016_path
+      = "|"
+      = link_to "Videos", "https://www.youtube.com/playlist?list=PLywl3hFMDCTlFZjapLNx-fBdlSFg7xrwM&jct=xJd4zyRA9xhaCTzGw8NBsH5DL3QgJw", target: "blank"
+      = "|"
+      = link_to "2018", conference_2018_path
+  .col

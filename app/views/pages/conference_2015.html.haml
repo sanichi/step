@@ -1,1 +1,21 @@
 - set_meta_tags title: t("conference.title", year: 2015), description: t("conference.description", year: 2015), keywords: t("conference.keywords", year: 2015)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2015)
+    %p.text-center Stirling, 21st March
+    %p.text-center
+      = link_to "2014", conference_2014_path
+      = "|"
+      = link_to "Videos", "https://www.youtube.com/playlist?list=PLywl3hFMDCTnL129T46ADFpobMhXNgQhR", target: "blank"
+      = "|"
+      = link_to "Programme", "/docs/2015/programme.pdf", target: "blank"
+      = "|"
+      = link_to "Workshops", "/docs/2015/workshops.pdf", target: "blank"
+      = "|"
+      = link_to "Photos", "/docs/2015/photos.pdf", target: "blank"
+      = "|"
+      = link_to "2016", conference_2016_path
+    %img.img-fluid.w-100.mt-5{src: "/images/2015/banner_1200x700.jpg", alt: "2015 conference"}
+  .col

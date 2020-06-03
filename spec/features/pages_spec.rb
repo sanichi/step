@@ -79,4 +79,44 @@ describe PagesController do
       expect(page).to have_title t("conference.title", year: 2019)
     end
   end
+
+  context "conference links" do
+    it "forward" do
+      visit conference_2013_path
+      expect(page).to have_title t("conference.title", year: 2013)
+      click_link "2014"
+      expect(page).to have_title t("conference.title", year: 2014)
+      click_link "2015"
+      expect(page).to have_title t("conference.title", year: 2015)
+      click_link "2016"
+      expect(page).to have_title t("conference.title", year: 2016)
+      click_link "2017"
+      expect(page).to have_title t("conference.title", year: 2017)
+      click_link "2018"
+      expect(page).to have_title t("conference.title", year: 2018)
+      click_link "2019"
+      expect(page).to have_title t("conference.title", year: 2019)
+      click_link "2020"
+      expect(page).to have_title t("conference.title", year: 2020)
+    end
+
+    it "backward" do
+      visit conference_2020_path
+      expect(page).to have_title t("conference.title", year: 2020)
+      click_link "2019"
+      expect(page).to have_title t("conference.title", year: 2019)
+      click_link "2018"
+      expect(page).to have_title t("conference.title", year: 2018)
+      click_link "2017"
+      expect(page).to have_title t("conference.title", year: 2017)
+      click_link "2016"
+      expect(page).to have_title t("conference.title", year: 2016)
+      click_link "2015"
+      expect(page).to have_title t("conference.title", year: 2015)
+      click_link "2014"
+      expect(page).to have_title t("conference.title", year: 2014)
+      click_link "2013"
+      expect(page).to have_title t("conference.title", year: 2013)
+    end
+  end
 end

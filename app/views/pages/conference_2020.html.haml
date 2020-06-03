@@ -1,1 +1,12 @@
 - set_meta_tags title: t("conference.title", year: 2020), description: t("conference.description", year: 2020), keywords: t("conference.keywords", year: 2020)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2020)
+    %p.text-center
+      = link_to "2019", conference_2019_path
+      = "|"
+      = "2021"
+    %img.img-fluid.w-100.mt-5{src: "/images/2020/postponed_1200x659.jpg", alt: "2020 conference"}
+  .col
