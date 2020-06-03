@@ -29,3 +29,9 @@ en:
     short: STEP
     full: Scottish Teachers for Enhancing Practice
     sub: Incorporating the Association of Chartered Teachers Scotland
+  conference:
+    acts: '%{year} ACTS Conference'
+    description: '%{year} STEP Conference'
+    keywords: 'STEP conference, %{year}'
+    step: '%{year} STEP Conference'
+    title: '%{year} Conference'
