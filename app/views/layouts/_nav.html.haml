@@ -1,0 +1,15 @@
+#banner
+  - if action_name == "home"
+    = render "layouts/logo"
+    .row
+      .col
+      .col-10.col-md-9.banner
+        .title= t("title.full")
+        .sub-title= t("title.sub")
+      .col
+    .nav.mt-5
+      = render "layouts/links"
+  - else
+    .nav
+      = render "layouts/logo"
+      = render "layouts/links"

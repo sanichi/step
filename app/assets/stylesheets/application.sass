@@ -3,3 +3,41 @@
 
 // Bootstrap
 @import "bootstrap"
+
+// Banner and navigation
+
+#banner
+  background-image: url('/images/misc/steps_1600x1000.jpg')
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-size: cover
+  background-position: bottom
+
+  img.logo
+    width: 100px
+    display: block
+    @extend .pt-4, .pb-4, .mx-auto
+
+  div.banner
+    background-color: white
+    opacity: 0.8
+    @extend .text-center, .p-2
+
+    &>.title
+      font-size: 2.0em
+      font-weight: normal
+      color: #515a6a
+      @extend .pt-2
+
+    &>.sub-title
+      font-size: 1.2em
+      font-weight: normal
+      color: #818181
+      @extend .pb-2
+
+  div.nav
+    font-size: 1.1em
+    background-color: white
+    opacity: 0.8
+    display: block
+    @extend .text-center, .pt-4, .pb-4

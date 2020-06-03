@@ -1,22 +1,31 @@
 en:
-  title: STEP
+  logo: STEP logo
   about:
     description: About Scottish Teachers for Enhancing Practice
     keywords: aims, contact, committee, members, history, charity
+    link: ABOUT
     title: About
   archive:
     description: Archive of the Scottish Teachers for Enhancing Practice
     keywords: conferences, previous, pictures, videos
+    link: ARCHIVE
     title: Archive
   home:
     description: Home page of the Scottish Teachers for Enhancing Practice
     keywords: education, teachers, ehancing, practice, scottish, scotland, association, chartered
+    link: HOME
     title: Home
   info:
     description: CLPL Opportunities and Useful Links
     keywords: clpl, opportunities, links, scottish, scotland, education
-    title: Home
+    link: INFO
+    title: Info
   register:
     description: Registration for STEP Conferences
     keywords: conference, registration, payment
-    title: Registration
+    link: REGISTER
+    title: Register
+  title:
+    short: STEP
+    full: Scottish Teachers for Enhancing Practice
+    sub: Incorporating the Association of Chartered Teachers Scotland

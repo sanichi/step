@@ -1,38 +1,39 @@
 require 'rails_helper'
 
 describe PagesController do
-  context "about" do
-    it "show" do
-      visit about_path
-      expect(page).to have_title t("about.title")
-    end
+  before(:each) do
+    visit home_path
   end
 
-  context "archive" do
-    it "show" do
-      visit archive_path
-      expect(page).to have_title t("archive.title")
-    end
+  it "home" do
+    expect(page).to have_title t("home.title")
   end
 
-  context "home" do
-    it "show" do
-      visit home_path
-      expect(page).to have_title t("home.title")
-    end
+  it "about" do
+    click_link t("about.link")
+    expect(page).to have_title t("about.title")
+    click_link t("home.link")
+    expect(page).to have_title t("home.title")
   end
 
-  context "info" do
-    it "show" do
-      visit info_path
-      expect(page).to have_title t("info.title")
-    end
+  it "archive" do
+    click_link t("archive.link")
+    expect(page).to have_title t("archive.title")
+    click_link t("home.link")
+    expect(page).to have_title t("home.title")
   end
 
-  context "register" do
-    it "show" do
-      visit register_path
-      expect(page).to have_title t("register.title")
-    end
+  it "info" do
+    click_link t("info.link")
+    expect(page).to have_title t("info.title")
+    click_link t("home.link")
+    expect(page).to have_title t("home.title")
+  end
+
+  it "register" do
+    click_link t("register.link")
+    expect(page).to have_title t("register.title")
+    click_link t("home.link")
+    expect(page).to have_title t("home.title")
   end
 end
