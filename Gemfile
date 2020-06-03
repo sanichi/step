@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'sqlite3', '~> 1.4'
 gem 'haml-rails', '~> 2.0'
 gem 'jquery-rails', '~> 4.3'
 gem 'sassc-rails', '~> 2.1'
