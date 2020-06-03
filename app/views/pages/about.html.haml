@@ -1,3 +1,126 @@
 - set_meta_tags title: t("about.title"), description: t("about.description"), keywords: t("about.keywords")
 
-%h1= t("about.title")
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5 Our Aims
+    %img.img-fluid.w-100.mt-5{src: "/images/misc/target_1200x500.jpg", alt: "our aims"}
+    %h4.text-center.mt-5 Create, Lead, Promote, Sustain
+    .row.mt-5
+      .col
+      .col-10.col-md-9.col-xl-8
+        %ul
+          %li To create an open and welcoming community of enquiring practitioners.
+          %li To lead professional dialogue within and beyond this community.
+          %li To promote reflective practice in the teaching profession.
+          %li To sustain the development of professional learning for the benefit of all learners.
+      .col
+    %h2.text-center.mt-5 Contact Us
+    %img.img-fluid.w-100.mt-5{src: "/images/misc/contact_1200x500.jpg", alt: "contact us"}
+    .row.mt-5
+      .col
+      .col-10.col-md-9.col-xl-8
+        %ul
+          %li
+            For membership information:
+            = mail_to "membership@STeachersEP.org.uk"
+          %li
+            Treasurer:
+            = mail_to "treasurer@STeachersEP.org.uk"
+          %li
+            All other enquiries:
+            = mail_to "info@STeachersEP.org.uk"
+          %li
+            Follow us on Twitter:
+            = link_to "@STeachersEP", "https://twitter.com/steachersep"
+          %li
+            Follow us on Facebook:
+            = link_to "ScottishTeachersforEnhancingPractice", "https://www.facebook.com/ScottishTeachersforEnhancingPractice/"
+      .col
+    %h2.text-center.mt-5 The STEP Committee
+    .row.mt-5
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/ann_mclean.jpg", alt: "Ann McLean"}
+        %p.text-center Ann McLean
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/sheila_hay.jpg", alt: "Sheila Hay"}
+        %p.text-center Sheila Hay
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/carolyn_paton.jpg", alt: "Carolyn Paton"}
+        %p.text-center Carolyn Paton
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/lorraine_devlin.jpg", alt: "Lorraine Devlin"}
+        %p.text-center Lorraine Devlin
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/susan_brownlie.jpg", alt: "Susan Brownlie"}
+        %p.text-center Susan Brownlie
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/rhona_robb.jpg", alt: "Rhona Robb"}
+        %p.text-center Rhona Robb
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/jodie_mackie.jpg", alt: "Jodie Mackie"}
+        %p.text-center Jodie Mackie
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/kate_coutts.jpg", alt: "Kate Coutts"}
+        %p.text-center Kate Coutts
+      .col-4
+        %img.img-fluid.w-100{src: "/images/people/jennifer_mcbride.jpg", alt: "Jennifer McBride"}
+        %p.text-center Jennifer McBride
+    %ul.mt-5
+      %li
+        Ann McLean (chairperson) Biology Teacher and Chartered Teacher at St. Margaret's Academy in Livingston.
+        Currently on part time secondment as Professional Update Development Officer and Probationer Co-ordinator
+        with West Lothian Council.
+      %li
+        Sheila Hay (secretary) Chartered Teacher and Support for Learning and Class Teacher, Job Share,
+        St Joseph's Primary, Edinburgh.
+      %li
+        Carolyn Paton (treasurer) Primary School Teacher in North Lanarkshire.
+      %li
+        Lorraine Devlin (member) Class teacher and Challenge Leader of Learning in Numeracy in Glasgow City Council,
+        having previously worked for East Dunbartonshire and The City of Edinburgh Council. Has a particular interest
+        in Early Years Education, Religious Education and teacher autonomy.
+      %li
+        Susan Brownlie (member) Teacher of English at St Andrew's and St Bride's High School in East Kilbride.
+        Areas of professional interest include supporting teacher learning, developing a whole school reading
+        culture and Holocaust education.
+      %li
+        Rhona Robb (member) Primary school teacher working with Glasgow City Council. Currently working in a
+        Complex Learning Needs school.
+      %li
+        Jodie Mackie (member) Biology Teacher in South Ayrshire Council. She is the Rights Respecting Schools
+        Coordinator and helped her school gain the silver award. Member of the LGBT Education Network in Ayrshire.
+      %li
+        Kate Coutts (member) Kate has 40 years experience in education, many of them as a teaching head. She has
+        combined this role with training, consultancy and research. Her work in outdoor learning, play and developing
+        leadership has been recognised at local and national level. A good knowledge of policy and research is
+        combined with practical working examples.
+      %li
+        Jennifer McBride (member) Principal Teacher and Challenge Leader of Learning in Numeracy in Glasgow City
+        Council, having previously worked for North Lanarkshire. Completed a Masters in Educational Studies and
+        has interests in Literacy, Religious Education and Teacher Leadership.
+      %li
+        Caroline Maloney (conference organiser).
+      %li
+        Juliette Daly (associate member).
+      %li
+        Christine MacGregor (associate member).
+    %img.img-fluid.w-100.mt-5{src: "/images/misc/history_1200x500.jpg", alt: "our aims"}
+    %p.mt-5
+      In 2014, the teachers behind the Association of Chartered Teachers Scotland (ACTS) stepped into the future
+      by relaunching as Scottish Teachers for Enhancing Practice (STEP).
+    %p
+      The new organisation, which was formally approved at a meeting on 1st March 2014, was intended to have a
+      broader appeal as membership would be open to all teachers wishing to enhance their practice, not just
+      Chartered Teachers. Andrina Inglis, the Chair of STEP at the time, said: "Now that the Chartered Teacher
+      scheme has ended, we felt our organisation needed to look to the future and become more inclusive. By
+      relaunching as STEP, we feel membership will interest a large number of teachers who are keen to improve
+      their practice."
+    %p
+      Professional update is a key issue for all teachers, and STEP, with its annual conference attracting a
+      range of highly regarded educational speakers, has a key role to play.
+    %p
+      Registered Charity:
+      = succeed(".") do
+        = link_to "SC041390 (Scotland)", "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=41390", target: "blank"
+  .col

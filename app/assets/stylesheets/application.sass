@@ -1,10 +1,17 @@
-// Bootstrap overides.
-// $link-color: #5c749c
+// Bootstrap overides and reuseables.
+$my-dark-text: #515a6a
+$my-light-text: #818181
 
 // Bootstrap
 @import "bootstrap"
 
 // Banner and navigation
+
+h1, h2, h3, h4, h5
+  color: $my-dark-text
+
+li, p
+  color: $my-light-text
 
 #banner
   background-image: url('/images/misc/steps_1000x700.jpg')
@@ -25,13 +32,13 @@
     &>.title
       font-size: 2.0em
       font-weight: normal
-      color: #515a6a
+      color: $my-dark-text
       @extend .pt-2
 
     &>.sub-title
       font-size: 1.2em
       font-weight: normal
-      color: #818181
+      color: $my-light-text
       @extend .pb-2
 
   div.nav
@@ -39,4 +46,5 @@
     background-color: white
     opacity: 0.8
     display: block
+    color: $my-dark-text
     @extend .text-center, .pt-4, .pb-4
