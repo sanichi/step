@@ -1,0 +1,6 @@
+.row
+  - data.each do |dim, nums|
+    - nums.to_a.each do |n|
+      - num = "%03d" % n
+      .col-6.col-md-4
+        %img.img-fluid.w-100.mt-4{src: "/images/#{year}/#{dim}/#{num}.jpg", alt: "picture #{num} #{dim}"}
