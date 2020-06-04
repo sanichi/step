@@ -11,5 +11,13 @@
       = link_to "Videos", "https://www.youtube.com/playlist?list=PLywl3hFMDCTnRzBGoH13ai2DKcI1_-FTK", target: "blank"
       = "|"
       = link_to "2019", conference_2019_path
+    %h4= "Slides"
+    %ul
+      %li
+        = "Nell Page and Dinah Aitken:"
+        = link_to "The Salvesen Mindroom Centre", "/docs/2018/dinah_aitken.pptx"
+        = "(PowerPoint)"
+    %h4.d-inline= "Photos"
+    .float-right= "by Douglas MacGregor"
     = render "images", year: 2018, data: { "1000x750" => 1..39, "750x1000" => 1..7 }
   .col
