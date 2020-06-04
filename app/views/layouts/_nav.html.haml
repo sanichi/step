@@ -1,15 +1,11 @@
 #banner
+  = render "layouts/logo"
   - if action_name == "home"
-    = render "layouts/logo"
-    .row
+    .row.mb-5
       .col
-      .col-10.col-md-9.banner
+      .col-10.col-md-9.col-lg-8.col-xl-7.banner
         .title= t("title.full")
         .sub-title= t("title.sub")
       .col
-    .nav.mt-5
-      = render "layouts/links"
-  - else
-    .nav
-      = render "layouts/logo"
-      = render "layouts/links"
+  .nav
+    = render "layouts/links"
