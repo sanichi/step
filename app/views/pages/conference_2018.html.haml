@@ -20,4 +20,24 @@
     %h4.d-inline= "Photos"
     .float-right= "by Douglas MacGregor"
     = render "images", year: 2018, data: { "1000x750" => 1..39, "750x1000" => 1..7 }
+    %h4.mt-5= "Sponsors"
+    %p
+      = link_to "https://www.gov.scot/", target: "blank" do
+        %img{src: "/images/logos/scot_gov.png", alt: "Scottish Government"}
+      = link_to "https://www.gtcs.org.uk/", target: "blank" do
+        %img{src: "/images/logos/gtc.png", alt: "GTC"}
+      = link_to "https://www.voicetheunion.org.uk/", target: "blank" do
+        %img{src: "/images/logos/voice.png", alt: "Voice the Union"}
+      = link_to "http://www.edutalk.info/", target: "blank" do
+        %img{src: "/images/logos/edutalk.png", alt: "Edutalk"}
+      = link_to "https://education.gov.scot/", target: "blank" do
+        %img{src: "/images/logos/scot_edu.png", alt: "Education Scotland"}
+      = link_to "https://www.eis.org.uk/", target: "blank" do
+        %img{src: "/images/logos/eis.png", alt: "EIS"}
+      = link_to "https://ssta.org.uk/", target: "blank" do
+        %img{src: "/images/logos/ssta.png", alt: "SSTA"}
+      = link_to "https://www.nasuwt.org.uk/advice/scotland.html", target: "blank" do
+        %img{src: "/images/logos/nasuwt.png", alt: "NASUWT"}
+      %img{src: "/images/logos/step_today.png", alt: "Step Today"}
+        -# Step Today link (http://www.steptoday.com/) no lobger works
   .col
