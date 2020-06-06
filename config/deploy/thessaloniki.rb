@@ -1,4 +1,4 @@
-server "thessaloniki.markorr.net", user: "sanichi", roles: %w{web app db}
+server "thessaloniki.sanichi.me", user: "sanichi", roles: %w{web app db}
 set :deploy_to, "/var/www/step"
 set :rails_env, "production"
 
