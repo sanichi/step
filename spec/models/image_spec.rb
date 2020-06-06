@@ -72,18 +72,18 @@ describe Image do
     it "yes" do
       expect(Image.new(2016, "1000x750", 1).next).to eq Image.new(2016, "1000x750", 2)
       expect(Image.new(2016, "1000x750", 29).next).to eq Image.new(2016, "563x750", 1)
+      expect(Image.new(2016, "999x562", 4).next).to eq Image.new(2017, "1000x750", 1)
       expect(Image.new(2017, "750x1000", 2).next).to eq Image.new(2017, "750x1000", 3)
       expect(Image.new(2017, "1000x750", 28).next).to eq Image.new(2017, "750x1000", 1)
+      expect(Image.new(2017, "750x1000", 3).next).to eq Image.new(2018, "1000x750", 1)
       expect(Image.new(2018, "750x1000", 6).next).to eq Image.new(2018, "750x1000", 7)
       expect(Image.new(2018, "1000x750", 40).next).to eq Image.new(2018, "750x1000", 1)
+      expect(Image.new(2018, "750x1000", 7).next).to eq Image.new(2019, "1000x600", 1)
       expect(Image.new(2019, "1000x600", 10).next).to eq Image.new(2019, "1000x600", 11)
       expect(Image.new(2019, "1000x600", 13).next).to eq Image.new(2019, "1000x750", 1)
     end
 
     it "no" do
-      expect(Image.new(2016, "999x562", 4).next).to be_nil
-      expect(Image.new(2017, "750x1000", 3).next).to be_nil
-      expect(Image.new(2018, "750x1000", 7).next).to be_nil
       expect(Image.new(2019, "750x1000", 3).next).to be_nil
     end
   end
@@ -92,19 +92,19 @@ describe Image do
     it "yes" do
       expect(Image.new(2016, "1000x750", 20).prev).to eq Image.new(2016, "1000x750", 19)
       expect(Image.new(2016, "999x562", 1).prev).to eq Image.new(2016, "563x750", 1)
+      expect(Image.new(2017, "1000x750", 1).prev).to eq Image.new(2016, "999x562", 4)
       expect(Image.new(2017, "1000x750", 14).prev).to eq Image.new(2017, "1000x750", 13)
       expect(Image.new(2017, "750x1000", 1).prev).to eq Image.new(2017, "1000x750", 28)
+      expect(Image.new(2018, "1000x750", 1).prev).to eq Image.new(2017, "750x1000", 3)
       expect(Image.new(2018, "750x1000", 7).prev).to eq Image.new(2018, "750x1000", 6)
       expect(Image.new(2018, "750x1000", 1).prev).to eq Image.new(2018, "1000x750", 40)
+      expect(Image.new(2019, "1000x600", 1).prev).to eq Image.new(2018, "750x1000", 7)
       expect(Image.new(2019, "750x1000", 2).prev).to eq Image.new(2019, "750x1000", 1)
       expect(Image.new(2019, "1000x750", 1).prev).to eq Image.new(2019, "1000x600", 13)
     end
 
     it "no" do
       expect(Image.new(2016, "1000x750", 1).prev).to be_nil
-      expect(Image.new(2017, "1000x750", 1).prev).to be_nil
-      expect(Image.new(2018, "1000x750", 1).prev).to be_nil
-      expect(Image.new(2019, "1000x600", 1).prev).to be_nil
     end
   end
 end

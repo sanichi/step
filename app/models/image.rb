@@ -23,10 +23,19 @@ class Image < Struct.new(:year, :dim, :num)
       index = dims.index(dim)
       if index && index + 1 < dims.size
         next_dim = dims[index + 1]
-        files = self.class.allowed_files(year, next_dim)
-        self.class.new(year, next_dim, files.first.to_i)
+        next_num = self.class.allowed_files(year, next_dim).first.to_i
+        self.class.new(year, next_dim, next_num)
       else
-        nil
+        years = self.class.allowed_years
+        index = years.index(year)
+        if index && index + 1 < years.size
+          next_year = years[index + 1]
+          next_dim = self.class.allowed_dims(next_year).first
+          next_num = self.class.allowed_files(next_year, next_dim).first.to_i
+          self.class.new(next_year, next_dim, next_num)
+        else
+          nil
+        end
       end
     end
   end
@@ -39,10 +48,19 @@ class Image < Struct.new(:year, :dim, :num)
       index = dims.index(dim)
       if index && index > 0
         prev_dim = dims[index - 1]
-        files = self.class.allowed_files(year, prev_dim)
-        self.class.new(year, prev_dim, files.last.to_i)
+        prev_num = self.class.allowed_files(year, prev_dim).last.to_i
+        self.class.new(year, prev_dim, prev_num)
       else
-        nil
+        years = self.class.allowed_years
+        index = years.index(year)
+        if index && index > 0
+          prev_year = years[index - 1]
+          prev_dim = self.class.allowed_dims(prev_year).last
+          prev_num = self.class.allowed_files(prev_year, prev_dim).last.to_i
+          self.class.new(prev_year, prev_dim, prev_num)
+        else
+          nil
+        end
       end
     end
   end
