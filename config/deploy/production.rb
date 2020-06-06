@@ -1,4 +1,4 @@
-server "178.79.183.128", user: "caroline", roles: %w{web app db}
+server "stirling.steachersep.org.uk", user: "caroline", roles: %w{web app db}
 set :deploy_to, "/var/www/step"
 set :rails_env, "production"
 
