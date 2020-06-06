@@ -1,3 +1,3 @@
 = link_to "/conference-#{year}" do
   %img.img-fluid.w-100{src: "/images/#{year}/link_500x300.jpg", alt: t("conference.title", year: year)}
-%p.text-center.mt-1= link_to t("conference.#{year > 2014 ? 'step' : 'acts'}", year: year), "/conference-#{year}"
+%p.text-center.mt-1= link_to conference(year), "/conference-#{year}"

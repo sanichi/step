@@ -1,5 +1,7 @@
 en:
   logo: STEP logo
+  next: ▶︎▶︎
+  prev: ◀︎◀︎
   about:
     description: About Scottish Teachers for Enhancing Practice
     keywords: aims, contact, committee, members, people, history, charity
@@ -15,6 +17,10 @@ en:
     keywords: education, teachers, ehancing, practice, scottish, scotland, association, chartered
     link: HOME
     title: Home
+  image:
+    description: Conference picture
+    keywords: pictures, images, conference
+    title: Picture
   info:
     description: CLPL Opportunities and Useful Links
     keywords: clpl, opportunities, links, scottish, scotland, education

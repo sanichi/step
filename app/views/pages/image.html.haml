@@ -1,0 +1,15 @@
+- set_meta_tags title: t("image.title"), description: t("image.description"), keywords: t("image.keywords")
+
+.row
+  .col
+  .col-10
+    %p.text-center.mt-3
+      - if @prev
+        = link_to t("prev"), @prev.path, class: "no-underline"
+        = "|"
+      = conference(@image.year)
+      - if @next
+        = "|"
+        = link_to t("next"), @next.path, class: "no-underline"
+    %img.img-fluid.w-100.mt-3{src: @image.src, alt: @image.alt}
+  .col
