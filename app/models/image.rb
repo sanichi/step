@@ -1,10 +1,10 @@
-class Image < Struct.new(:year, :dim, :num)
+class Image < Struct.new(:year, :dim, :num, :small)
   def src
     "/images/#{year}/#{dim}/#{file}"
   end
 
   def file
-    "%03d.jpg" % num
+    "%s%03d.jpg" % [small ? 's' : '', num]
   end
 
   def path

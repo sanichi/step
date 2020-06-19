@@ -1,7 +1,7 @@
 .row
   - data.sort.to_h.each do |dim, nums|
     - nums.to_a.each do |num|
-      - image = Image.new(year, dim, num)
+      - image = Image.new(year, dim, num, true)
       .col-6.col-md-4
         = link_to image.path do
           %img.img-fluid.w-100.mt-4{src: image.src, alt: image.alt}
