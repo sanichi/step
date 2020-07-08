@@ -1,8 +1,5 @@
-# config valid for current version and patch releases of Capistrano
-# lock "~> 3.14.0"
-
-set :application, "step_app"
-set :repo_url, "git@bitbucket.org:sanichi/step_app.git"
+set :application, "step"
+set :repo_url, "git@bitbucket.org:sanichi/step.git"
 set :log_level, :info
 append :linked_files, "config/database.yml", "config/master.key", "db/production.sqlite3"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
