@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '6.0.3.3'
+gem 'rails', '6.0.3.4'
 gem 'sqlite3', '~> 1.4'
 gem 'haml-rails', '~> 2.0'
 gem 'jquery-rails', '~> 4.3'
@@ -21,7 +21,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'puma', '~> 4.1'
+  gem 'puma', '~> 5.0'
   gem 'capistrano-rails', '~> 1.4', require: false
   gem 'capistrano-passenger', '~> 0.2', require: false
   gem 'listen', '~> 3.2'
