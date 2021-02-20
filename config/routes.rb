@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   (2013..2020).each do |year|
     get "conference-#{year}" => "pages#conference_#{year}"
   end
+
+  get "online-2021" => "pages#online_2021"
 end

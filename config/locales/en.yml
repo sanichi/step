@@ -12,6 +12,12 @@ en:
     keywords: conferences, previous, pictures, videos
     link: ARCHIVE
     title: Archive
+  conference:
+    acts: '%{year} ACTS Conference'
+    description: '%{year} STEP Conference'
+    keywords: 'STEP conference, %{year}'
+    step: '%{year} STEP Conference'
+    title: '%{year} Conference'
   home:
     description: Home page of the Scottish Teachers for Enhancing Practice
     keywords: education, teachers, ehancing, practice, scottish, scotland, association, chartered
@@ -26,6 +32,10 @@ en:
     keywords: clpl, opportunities, links, scottish, scotland, education
     link: INFO
     title: Info
+  online:
+    description: '%{year} Online events'
+    keywords: 'STEP, online, events, %{year}'
+    title: '%{year} Online Events'
   register:
     description: Registration for STEP Conferences
     keywords: conference, registration, payment
@@ -35,9 +45,3 @@ en:
     short: STEP
     full: Scottish Teachers for Enhancing Practice
     sub: Incorporating the Association of Chartered Teachers Scotland
-  conference:
-    acts: '%{year} ACTS Conference'
-    description: '%{year} STEP Conference'
-    keywords: 'STEP conference, %{year}'
-    step: '%{year} STEP Conference'
-    title: '%{year} Conference'

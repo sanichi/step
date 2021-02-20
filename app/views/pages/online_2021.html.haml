@@ -1,0 +1,17 @@
+- set_meta_tags title: t("online.title", year: 2020), description: t("online.description", year: 2020), keywords: t("online.keywords", year: 2020)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("online.title", year: 2021)
+    %p.text-center
+      = link_to "2020", conference_2020_path
+      = "|"
+      = "2022"
+    - lnk = "https://www.youtube.com/watch?v=8eYjChqh5pM&t=2s"
+    - alt = "STEP twilight with Dr Pauline Stephen"
+    - trg = "youtube"
+    %h3.mt-5.text-center= link_to alt, lnk, target: trg
+    = link_to lnk, target: trg do
+      %img.img-fluid.w-100.mt-5{src: "/images/2021/pauline_stephen_1000x620.jpg", alt: alt}
+  .col
