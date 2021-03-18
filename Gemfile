@@ -10,7 +10,7 @@ gem 'uglifier', '~> 4.2'
 gem 'meta-tags', '~> 2.12'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 4.0'
+  gem 'rspec-rails', '~> 5.0'
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
   gem 'launchy', '~> 2.5'
