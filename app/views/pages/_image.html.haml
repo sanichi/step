@@ -1,9 +1,9 @@
 %p.text-center.mt-3
   - if prv
-    = link_to t("prev"), prv.path, class: "no-underline", remote: true
+    = link_to t("prev"), prv.path, remote: true
     = "|"
   = link_to image.year, "/conference-#{image.year}"
   - if nxt
     = "|"
-    = link_to t("next"), nxt.path, class: "no-underline", remote: true
+    = link_to t("next"), nxt.path, remote: true
 %img.img-fluid.w-100{src: image.src, alt: image.alt}
