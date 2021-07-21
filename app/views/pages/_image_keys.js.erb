@@ -1,0 +1,25 @@
+var nxt_path = '<%= nxt ? nxt.path : "" %>';
+var prv_path = '<%= prv ? prv.path : "" %>';
+
+$(function() {
+  $(window).keydown(function(e) {
+    switch (e.keyCode) {
+      case 39: // right arrow
+      case 78: // 'n' for next
+        if (nxt_path) {
+          $.ajax(nxt_path, {
+            dataType: 'script'
+          });
+        }
+        break;
+      case 37: // left arrow
+      case 80: // 'p' for previous
+        if (prv_path) {
+          $.ajax(prv_path, {
+            dataType: 'script'
+          });
+        }
+        break;
+    }
+  });
+});

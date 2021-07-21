@@ -1,5 +1,8 @@
 - set_meta_tags title: t("image.title"), description: t("image.description"), keywords: t("image.keywords")
 
+- content_for :javascript do
+  = render partial: "image_keys", formats: :js, locals: { nxt: @next, prv: @prev }
+
 .row
   .col
   .col-10#image= render "image", image: @image, nxt: @next, prv: @prev

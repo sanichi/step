@@ -1,1 +1,3 @@
 $("#image").html("<%= j render('image', image: @image, nxt: @next, prv: @prev) %>");
+nxt_path = '<%= @next ? @next.path : "" %>';
+prv_path = '<%= @prev ? @prev.path : "" %>';
