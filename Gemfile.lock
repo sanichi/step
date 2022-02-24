@@ -286,6 +286,3 @@ DEPENDENCIES
   sprockets-rails (~> 3.4)
   terser (~> 1.1)
   uglifier (~> 4.2)
-
-BUNDLED WITH
-   2.3.5
