@@ -5,7 +5,6 @@ gem 'haml-rails', '~> 2.0'
 gem 'jquery-rails', '~> 4.3'
 gem 'sassc-rails', '~> 2.1'
 gem 'bootstrap', '~> 5.0'
-gem 'uglifier', '~> 4.2'
 gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
 
