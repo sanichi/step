@@ -22,5 +22,5 @@
 #
 #   # Report CSP violations to a specified URI. See:
 #   # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy-Report-Only
-#   # config.content_security_policy_report_only = true
+#   # config.content_security_policy_report_only = true # disabled
 # end
