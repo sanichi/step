@@ -98,10 +98,18 @@ describe PagesController do
       expect(page).to have_title t("conference.title", year: 2019)
       click_link "2020"
       expect(page).to have_title t("conference.title", year: 2020)
+      click_link "2021"
+      expect(page).to have_title t("online.title", year: 2021)
+      click_link "2022"
+      expect(page).to have_title t("online.title", year: 2022)
     end
 
     it "backward" do
-      visit conference_2020_path
+      visit online_2022_path
+      expect(page).to have_title t("online.title", year: 2022)
+      click_link "2021"
+      expect(page).to have_title t("online.title", year: 2021)
+      click_link "2020"
       expect(page).to have_title t("conference.title", year: 2020)
       click_link "2019"
       expect(page).to have_title t("conference.title", year: 2019)
