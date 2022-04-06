@@ -1,0 +1,31 @@
+- set_meta_tags title: t("online.title", year: 2020), description: t("online.description", year: 2020), keywords: t("online.keywords", year: 2020)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("online.title", year: 2022)
+    %p.text-center
+      = link_to "2021", online_2021_path
+      = "|"
+      = "2023"
+    - name1 = "David Cameron"
+    - name2 = "Ken Muir"
+    - form1 = "https://forms.office.com/r/Bdt4w8v1gT"
+    - form2 = "https://forms.office.com/r/4m9NhJWUYg"
+    - target = "forms"
+    %p.mb-0
+      STEP will be hosting a series of online events, beginning with (The Real) David Cameron
+      and Professor Ken Muir. During these pre-recorded events the committee will ask questions
+      submitted online. Submit your questions here:
+      = succeed(",") do
+        = link_to name1, form1, target: target
+      = succeed(".") do
+        = link_to name2, form2, target: target
+    .row
+      .col-6
+        = link_to form1, target: target do
+          %img.img-fluid.w-100.mt-5{src: "/images/2022/david_cameron_800x800.jpg", alt: name1}
+      .col-6
+        = link_to form2, target: target do
+          %img.img-fluid.w-100.mt-5{src: "/images/2022/ken_muir_800x800.jpg", alt: name2}
+  .col
