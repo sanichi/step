@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '7.0.2.4'
+gem 'rails', '7.0.3'
 gem 'haml-rails', '~> 2.0'
 gem 'jquery-rails', '~> 4.3'
 gem 'sassc-rails', '~> 2.1'
 gem 'bootstrap', '~> 5.0'
 gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
+gem 'strscan', '3.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '~> 5.0'
