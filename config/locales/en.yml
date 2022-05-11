@@ -41,6 +41,11 @@ en:
     keywords: conference, registration, payment
     link: REGISTER
     title: Register
+  stepcast:
+    description: Video and audio from Scottish Teachers for Enhancing Practice
+    keywords: video, audio, scottish, scotland, education
+    link: STEPCAST
+    title: STEPcast
   title:
     short: STEP
     full: Scottish Teachers for Enhancing Practice

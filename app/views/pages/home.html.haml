@@ -8,24 +8,31 @@
         %h2.text-center= link_to t("online.title", year: 2022), online_2022_path
         - name1 = "David Cameron"
         - name2 = "Ken Muir"
-        - form1 = "https://forms.office.com/r/Bdt4w8v1gT"
-        - form2 = "https://forms.office.com/r/4m9NhJWUYg"
+        - link1 = "https://forms.office.com/r/Bdt4w8v1gT"
+        - link2 = "https://forms.office.com/r/4m9NhJWUYg"
+        - link2 = "/stepcast"
         - target = "forms"
         %p.mb-0
-          STEP will be hosting a series of online events, beginning with (The Real) David Cameron
-          and Professor Ken Muir. During these pre-recorded events the committee will ask questions
-          submitted online. Submit your questions here:
-          = succeed(",") do
-            = link_to name1, form1, target: target
-          = succeed(".") do
-            = link_to name2, form2, target: target
+          STEP are hosting a series of online events, including
+          Professor Ken Muir and (The Real) David Cameron.
+          During these pre-recorded events the committee will
+          ask questions submitted online.
+        %ul.mt-2
+          %li
+            Listen to
+            = succeed(".") do
+              = link_to name2, link2
+          %li
+            Submit questions for
+            = succeed(".") do
+              = link_to name1, link1, target: target
         .row
           .col-6
-            = link_to form1, target: target do
-              %img.img-fluid.w-100.mt-5{src: "/images/2022/david_cameron_800x800.jpg", alt: name1}
+            = link_to link2 do
+              %img.img-fluid.w-100.mt-2{src: "/images/2022/ken_muir_880x800.jpg", alt: name2}
           .col-6
-            = link_to form2, target: target do
-              %img.img-fluid.w-100.mt-5{src: "/images/2022/ken_muir_800x800.jpg", alt: name2}
+            = link_to link1, target: target do
+              %img.img-fluid.w-100.mt-2{src: "/images/2022/david_cameron_800x800.jpg", alt: name1}
       .col-12.col-md-6.mt-5
         = render "twitter"
   .col
