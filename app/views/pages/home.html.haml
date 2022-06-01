@@ -6,33 +6,29 @@
     .row
       .col-12.col-md-6.mt-5
         %h2.text-center= link_to t("online.title", year: 2022), online_2022_path
-        - name1 = "David Cameron"
-        - name2 = "Ken Muir"
-        - link1 = "https://forms.office.com/r/Bdt4w8v1gT"
-        - link2 = "https://forms.office.com/r/4m9NhJWUYg"
-        - link2 = "/stepcast"
-        - target = "forms"
+        - name1 = "Ken Muir"
+        - name2 = "David Cameron"
+        - link1 = "/stepcast#2022-ken-muir"
+        - link2 = "/stepcast#2022-david-cameron"
+        - foto1 = "/images/2022/ken_muir_880x800.jpg"
+        - foto2 = "/images/2022/david_cameron_880x800.jpg"
         %p.mb-0
           STEP are hosting a series of online events starting
           with Professor Ken Muir and (The Real) David Cameron.
           During these pre-recorded events the committee will
           ask questions submitted online.
-        %ul.mt-2
-          %li
-            Listen to
-            = succeed(".") do
-              = link_to name2, link2
-          %li
-            Submit questions for
-            = succeed(".") do
-              = link_to name1, link1, target: target
+          Listen to:
+          = succeed(",") do
+            = link_to name1, link1
+          = succeed(".") do
+            = link_to name2, link2
         .row
           .col-6
-            = link_to link2 do
-              %img.img-fluid.w-100.mt-2{src: "/images/2022/ken_muir_880x800.jpg", alt: name2}
+            = link_to link1 do
+              %img.img-fluid.w-100.mt-2{src: foto1, alt: name1}
           .col-6
-            = link_to link1, target: target do
-              %img.img-fluid.w-100.mt-2{src: "/images/2022/david_cameron_800x800.jpg", alt: name1}
+            = link_to link2 do
+              %img.img-fluid.w-100.mt-2{src: foto2, alt: name2}
       .col-12.col-md-6.mt-5
         = render "twitter"
   .col
