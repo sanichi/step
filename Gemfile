@@ -9,14 +9,14 @@ gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 5.0'
+  gem 'rspec-rails', '< 7'
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
   gem 'launchy', '~> 2.5'
 end
 
 group :development do
-  gem 'puma', '~> 5.0'
+  gem 'puma', '< 7'
   gem 'capistrano-rails', '~> 1.4', require: false
   gem 'capistrano-passenger', '~> 0.2', require: false
   gem 'listen', '~> 3.2'
