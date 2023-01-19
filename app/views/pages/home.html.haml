@@ -5,30 +5,15 @@
   .col-10
     .row
       .col-12.col-md-6.mt-5
-        %h2.text-center= link_to t("online.title", year: 2022), online_2022_path
-        - name1 = "Ken Muir"
-        - name2 = "David Cameron"
-        - link1 = "/stepcast#2022-ken-muir"
-        - link2 = "/stepcast#2022-david-cameron"
-        - foto1 = "/images/2022/ken_muir_880x800.jpg"
-        - foto2 = "/images/2022/david_cameron_880x800.jpg"
-        %p.mb-0
-          STEP are hosting a series of online events starting
-          with Professor Ken Muir and (The Real) David Cameron.
-          During these pre-recorded events the committee will
-          ask questions submitted online.
-          Listen to:
-          = succeed(",") do
-            = link_to name1, link1
-          = succeed(".") do
-            = link_to name2, link2
-        .row
-          .col-6
-            = link_to link1 do
-              %img.img-fluid.w-100.mt-2{src: foto1, alt: name1}
-          .col-6
-            = link_to link2 do
-              %img.img-fluid.w-100.mt-2{src: foto2, alt: name2}
+        %h2.text-center= link_to t("conference.title", year: 2023), conference_2023_path
+        %p.text-center.mt-3.mb-3
+          = link_to "Booking Form", "/docs/2023/booking.docx"
+          = "|"
+          = link_to "Keynotes", "/docs/2023/keynotes.pdf"
+          = "|"
+          = link_to "Workshpos", "/docs/2023/workshops.pdf"
+        = link_to conference_2023_path do
+          %img.img-fluid.w-100{src: "/images/2023/flyer_1200x846.jpg", alt: "flyer"}
       .col-12.col-md-6.mt-5
         = render "twitter"
   .col
