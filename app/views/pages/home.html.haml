@@ -7,15 +7,9 @@
       .col-12.col-md-6.mt-5
         %h2.text-center= link_to t("conference.title", year: 2023), conference_2023_path
         %p.text-center.mt-3.mb-3
-          = link_to "Booking Form", "/docs/2023/booking.docx"
-          = "|"
           = link_to "Keynotes", "/docs/2023/keynotes.pdf"
           = "|"
           = link_to "Workshops", "/docs/2023/workshops.pdf"
-        %p.mt-3.mb-3
-          For a special rate of <b>£65 B&B</b> the night before the conference, please phone Stirling Court Hotel (01786 451666) quoting reference number 251685.
-        %p.mt-3.mb-3
-          The deadline for conference bookings has been extended to <b>9th March</b>.
         = link_to conference_2023_path do
           %img.img-fluid.w-100{src: "/images/2023/flyer_1200x890.jpg", alt: "flyer"}
       .col-12.col-md-6.mt-5
