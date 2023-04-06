@@ -43,6 +43,9 @@
         = "Yvonne McBlain:"
         = link_to "Building Learning for Sustainability into Practice", "/docs/2023/yvonne_mcblain.pptx"
         = "(PowerPoint)"
+    %h4.d-inline= "Photos"
+    .float-end= "by Gordon McManus"
+    = render "images", year: 2023, data: { "800x500" => (1..47).reject{|i| i==40}, "800x800" => 1..5, "800x999" => 1..3 }
     %h4.mt-3= "Flyer"
     %img.img-fluid.w-100{src: "/images/2023/flyer_without_sponsors_1200x747.jpg", alt: "flyer"}
     %h4.mt-3= "Sponsors"
