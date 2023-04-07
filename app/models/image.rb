@@ -100,12 +100,17 @@ class Image < Struct.new(:year, :dim, :num, :small)
     end
 
     def allowed_dims(year)
-      image_dir(year)
-        .glob("*x*")
-        .map(&:basename)
-        .map(&:to_s)
-        .select { |dim| dim.match?(/\A\d+x\d+\z/) }
-        .sort
+      case year
+      when 2023
+        ["800x500", "800x800", "800x1100"]
+      else
+        image_dir(year)
+          .glob("*x*")
+          .map(&:basename)
+          .map(&:to_s)
+          .select { |dim| dim.match?(/\A\d+x\d+\z/) }
+          .sort
+      end
     end
 
     def allowed_files(year, dim)

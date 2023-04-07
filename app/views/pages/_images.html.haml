@@ -1,6 +1,6 @@
 .row
-  - data.sort.to_h.each do |dim, nums|
-    - nums.to_a.each do |num|
+  - Image.allowed_dims(year).each do |dim|
+    - data[dim].to_a.each do |num|
       - image = Image.new(year, dim, num, true)
       .col-6.col-md-4.col-xl-3
         = link_to image.path do

@@ -36,7 +36,7 @@ describe Image do
       expect(Image.check_dim(2017, "750x1000")).to eq "750x1000"
       expect(Image.check_dim(2018, "750x1000")).to eq "750x1000"
       expect(Image.check_dim(2019, "1000x750")).to eq "1000x750"
-      expect(Image.check_dim(2023, "800x999")).to eq "800x999"
+      expect(Image.check_dim(2023, "800x1100")).to eq "800x1100"
     end
   end
 
@@ -81,7 +81,7 @@ describe Image do
     it "yes" do
       expect(Image.new(2016, "1000x750", 1).next).to eq Image.new(2016, "1000x750", 2)
       expect(Image.new(2016, "1000x750", 29).next).to eq Image.new(2016, "560x420", 1)
-      expect(Image.new(2016, "999x562", 4).next).to eq Image.new(2017, "1000x750", 1)
+      expect(Image.new(2016, "1000x562", 4).next).to eq Image.new(2017, "1000x750", 1)
       expect(Image.new(2017, "750x1000", 2).next).to eq Image.new(2017, "750x1000", 3)
       expect(Image.new(2017, "1000x750", 28).next).to eq Image.new(2017, "750x1000", 1)
       expect(Image.new(2017, "750x1000", 3).next).to eq Image.new(2018, "1000x750", 1)
@@ -91,11 +91,11 @@ describe Image do
       expect(Image.new(2019, "1000x600", 10).next).to eq Image.new(2019, "1000x600", 11)
       expect(Image.new(2019, "1000x600", 13).next).to eq Image.new(2019, "1000x750", 1)
       expect(Image.new(2019, "750x1000", 3).next).to eq Image.new(2023, "800x500", 1)
-      expect(Image.new(2023, "800x800", 5).next).to eq Image.new(2023, "800x999", 1)
+      expect(Image.new(2023, "800x800", 5).next).to eq Image.new(2023, "800x1100", 1)
     end
 
     it "no" do
-      expect(Image.new(2023, "800x999", 3).next).to be_nil
+      expect(Image.new(2023, "800x1100", 3).next).to be_nil
     end
   end
 
