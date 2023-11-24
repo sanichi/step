@@ -18,6 +18,8 @@ en:
     keywords: 'STEP conference, %{year}'
     step: '%{year} STEP Conference'
     title: '%{year} Conference'
+  env:
+    title: ENV
   home:
     description: Home page of the Scottish Teachers for Enhancing Practice
     keywords: scottish, teachers, ehancing, practice, education, scotland, association, chartered
