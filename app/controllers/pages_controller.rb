@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def env
-    dirs = `ls /home/sanichi/.passenger/native_support`
+    dirs = `ls /home/sanichi/.passenger/native_support 2>&1`
     vers = dirs.scan(/\d*\.\d*\.\d*/)
     @passenger_version = vers.any? ? vers.last : "not found"
     @host = ENV["HOSTNAME"] || `hostname`.chop.sub(".local", "")
