@@ -1,0 +1,19 @@
+- set_meta_tags title: t("conference.title", year: 2024), description: t("conference.description", year: 2024), keywords: t("conference.keywords", year: 2024)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2024)
+    %p.text-center Stirling, 2nd March
+    %p.text-center
+      = link_to "2023", conference_2023_path
+      = "|"
+      = "2025"
+    -# %p.text-center
+    -#   = link_to "Booking Form", "/docs/2024/booking.docx"
+    -#   = "|"
+    -#   = link_to "Keynotes", "/docs/2024/keynotes.pdf"
+    -#   = "|"
+    -#   = link_to "Workshpos", "/docs/2024/workshops.pdf"
+    %img.img-fluid.w-100{src: "/images/2024/flyer_1200x763.jpg", alt: "flyer"}
+  .col

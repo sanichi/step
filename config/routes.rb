@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get page => "pages##{page}"
   end
 
-  ((2013..2020).to_a + [2023]).each do |year|
+  ((2013..2020).to_a + [2023, 2024]).each do |year|
     get "conference-#{year}" => "pages#conference_#{year}"
   end
 
