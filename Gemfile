@@ -12,7 +12,7 @@ group :development, :test do
   gem 'rspec-rails', '< 7'
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
-  gem 'launchy', '~> 2.5'
+  gem 'launchy'
 end
 
 group :development do
