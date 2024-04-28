@@ -159,7 +159,6 @@ GEM
     meta-tags (2.21.0)
       actionpack (>= 6.0.0, < 7.2)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.6)
     minitest (5.22.3)
     mutex_m (0.2.0)
     net-imap (0.4.10)
@@ -177,8 +176,9 @@ GEM
       net-protocol
     net-ssh (7.2.3)
     nio4r (2.7.1)
-    nokogiri (1.16.4)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.16.4-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     popper_js (2.11.8)
     psych (5.1.2)
@@ -289,7 +289,8 @@ GEM
     zeitwerk (2.6.13)
 
 PLATFORMS
-  ruby
+  arm64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   bootstrap (~> 5.0)
