@@ -4,11 +4,11 @@
   .col
   .col-10
     %h2.text-center.mt-5= t("archive.title")
-    -# .row.mt-5
-    -#   .col-12
-    -#     = link_to conference_2019_path do
-    -#       %img.img-fluid.w-100{src: "/images/2019/banner_1500x900.jpg", alt: t("conference.title", year: 2019)}
-    -#     %p.text-center.mt-1= link_to t("conference.step", year: 2019), conference_2019_path
+    .row.mt-5
+      .col-12
+        = link_to conference_2024_path do
+          %img.img-fluid.w-100{src: "/images/2024/banner_1000x600.jpg", alt: t("conference.title", year: 2024)}
+        %p.text-center.mt-1= link_to t("conference.step", year: 2024), conference_2024_path
     .row
       .col-6= render "alink", year: 2023
       .col-6= render "alink", year: 2019
