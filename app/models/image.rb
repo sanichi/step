@@ -102,7 +102,7 @@ class Image < Struct.new(:year, :dim, :num, :small)
     def allowed_dims(year)
       case year
       when 2023
-        ["800x500", "800x800", "800x1100"]
+        ["800x500", "800x800", "800x1100"] # just to get the order right
       else
         image_dir(year)
           .glob("*x*")
