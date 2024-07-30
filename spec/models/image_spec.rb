@@ -92,10 +92,11 @@ describe Image do
       expect(Image.new(2019, "1000x600", 13).next).to eq Image.new(2019, "1000x750", 1)
       expect(Image.new(2019, "750x1000", 3).next).to eq Image.new(2023, "800x500", 1)
       expect(Image.new(2023, "800x800", 5).next).to eq Image.new(2023, "800x1100", 1)
+      expect(Image.new(2023, "800x1100", 3).next).to eq Image.new(2024, "800x500", 1)
     end
 
     it "no" do
-      expect(Image.new(2023, "800x1100", 3).next).to be_nil
+      expect(Image.new(2024, "800x500", 1).next).to be_nil
     end
   end
 
@@ -113,6 +114,7 @@ describe Image do
       expect(Image.new(2019, "750x1000", 2).prev).to eq Image.new(2019, "750x1000", 1)
       expect(Image.new(2019, "1000x750", 1).prev).to eq Image.new(2019, "1000x600", 13)
       expect(Image.new(2023, "800x500", 1).prev).to eq Image.new(2019, "750x1000", 3)
+      expect(Image.new(2024, "800x500", 1).prev).to eq Image.new(2023, "800x1100", 3)
     end
 
     it "no" do

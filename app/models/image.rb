@@ -95,7 +95,7 @@ class Image < Struct.new(:year, :dim, :num, :small)
         .map(&:basename)
         .map(&:to_s)
         .map(&:to_i)
-        .select { |year| (year >= 2016 && year <= 2019) || year == 2023 }
+        .select { |year| (year >= 2016 && year <= 2019) || (year >= 2023 && year <= 2024) }
         .sort
     end
 

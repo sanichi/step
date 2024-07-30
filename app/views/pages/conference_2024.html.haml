@@ -9,5 +9,8 @@
       = link_to "2023", conference_2023_path
       = "|"
       = "2025"
+    %h4.d-inline= "Photos"
+    = render "images", year: 2024, data: { "800x500" => 1..1 }
+    %h4.mt-3= "Flyer"
     %img.img-fluid.w-100{src: "/images/2024/flyer_v2_1200x844.jpg", alt: "flyer"}
   .col
