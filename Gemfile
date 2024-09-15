@@ -9,7 +9,7 @@ gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
 
 group :development, :test do
-  gem 'rspec-rails', '< 7'
+  gem 'rspec-rails', '< 8'
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
   gem 'launchy'
