@@ -1,0 +1,13 @@
+- set_meta_tags title: t("conference.title", year: 2025), description: t("conference.description", year: 2025), keywords: t("conference.keywords", year: 2025)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2025)
+    %p.text-center Stirling, 22nd March
+    %p.text-center
+      = link_to "2024", conference_2024_path
+      = "|"
+      = "2026"
+    %img.img-fluid.w-100{src: "/images/2025/flyer_v1_1000x620.jpg", alt: "flyer"}
+  .col
