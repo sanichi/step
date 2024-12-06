@@ -5,7 +5,10 @@
   .col-10
     .row
       .col-12.col-md-6.mt-5
-        %h2.text-center= "Call for Participation"
+        %h3.text-center.mb-3= link_to "Karen Watson STEPcast", "/stepcast#2024-karen-watson"
+        = link_to "/stepcast#2024-karen-watson" do
+          %img.img-fluid.w-100{src: "/images/2024/karen_watson_800x800.jpg", alt: "Karen Watson STEPcast"}
+        %h2.text-center.mt-4= "Call for Participation"
         %p
           = link_to "Vidminas Vizgirda", "https://vidminas.github.io"
           is an Edinburgh University PhD student conducting research into
