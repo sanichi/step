@@ -5,6 +5,16 @@
   .col-10
     .row
       .col-12.col-md-6.mt-5
+        = link_to "https://scholar.hw.ac.uk" do
+          %img.img-fluid.w-100{src: "/images/2025/scholar_480x100.png", alt: "Scholar website"}
+        %p.mt-3
+          = succeed(",") do
+            = link_to "Scholar", "https://scholar.hw.ac.uk"
+          the online learning resource for schools and colleges established in partnership with Heriot Watt University and ADES,
+          marks its 25th anniversary this year. Having registered more than a million learners since its creation, Scholar boasts an
+          average of 140,000 students and 15,000 teachers and lecturers registered each academic year.
+          = succeed(".") do
+            = link_to "Newsletter", "/docs/2025/scholar.pdf"
         %h3.text-center.mb-3= link_to "Karen Watson STEPcast", "/stepcast#2024-karen-watson"
         = link_to "/stepcast#2024-karen-watson" do
           %img.img-fluid.w-100{src: "/images/2024/karen_watson_800x800.jpg", alt: "Karen Watson STEPcast"}
