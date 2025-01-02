@@ -160,6 +160,7 @@ GEM
     meta-tags (2.22.1)
       actionpack (>= 6.0.0, < 8.1)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.8)
     minitest (5.25.4)
     net-imap (0.5.4)
       date
@@ -176,9 +177,8 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.4)
-    nokogiri (1.18.1-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.18.1-x86_64-linux-gnu)
+    nokogiri (1.18.1)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     ostruct (0.6.1)
     popper_js (2.11.8)
@@ -307,6 +307,7 @@ DEPENDENCIES
   launchy
   listen (~> 3.2)
   meta-tags (~> 2.12)
+  nokogiri
   puma (< 7)
   rails (= 8.0.1)
   rspec-rails (< 8)

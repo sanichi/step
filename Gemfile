@@ -8,6 +8,9 @@ gem 'bootstrap', '~> 5.0'
 gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
 
+# Temporary fix
+gem "nokogiri", force_ruby_platform: true
+
 group :development, :test do
   gem 'rspec-rails', '< 8'
   gem 'capybara', '~> 3.28'
