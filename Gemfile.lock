@@ -132,6 +132,10 @@ GEM
       railties (>= 5.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
+    importmap-rails (2.1.0)
+      actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.8.0)
     irb (1.14.3)
       rdoc (>= 4.0.0)
@@ -305,6 +309,7 @@ DEPENDENCIES
   capistrano-rails (~> 1.4)
   capybara (~> 3.28)
   haml-rails (~> 2.0)
+  importmap-rails (~> 2.1)
   jquery-rails (~> 4.3)
   launchy
   listen (~> 3.2)
