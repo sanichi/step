@@ -17,6 +17,7 @@ group :development, :test do
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
   gem 'launchy'
+  gem 'selenium-webdriver', '~> 4.0'
 end
 
 group :development do

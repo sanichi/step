@@ -55,6 +55,9 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 
+# Temporary solution to selenium deprecation messages.
+Selenium::WebDriver.logger.ignore(:clear_local_storage, :clear_session_storage)
+
 Capybara.configure do |config|
   config.exact = true # exact matches
 end
