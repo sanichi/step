@@ -3,11 +3,11 @@ source 'https://rubygems.org'
 gem 'rails', '8.0.1'
 gem 'haml-rails', '~> 2.0'
 gem 'sassc-rails', '~> 2.1'
-gem 'jquery-rails', '~> 4.3'
 gem 'bootstrap', '~> 5.0'
 gem 'meta-tags', '~> 2.12'
 gem 'sprockets-rails', '~> 3.4'
 gem 'importmap-rails', '~> 2.1'
+gem "turbo-rails", "~> 2.0"
 
 # Temporary fix
 gem "nokogiri", force_ruby_platform: true

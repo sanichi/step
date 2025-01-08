@@ -7,4 +7,4 @@ Rails.application.config.assets.version = "1.0"
 # Rails.application.config.assets.paths << Emoji.images_path
 
 # Precompile for production.
-Rails.application.config.assets.precompile += %w( jquery3.min.js bootstrap.min.js )
+# Rails.application.config.assets.precompile += %w( bootstrap.min.js )
