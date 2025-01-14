@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe PagesController do
+describe PagesController, js: true do
   context "nav links" do
     before(:each) do
       visit home_path

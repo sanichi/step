@@ -4,7 +4,4 @@
 = csrf_meta_tags
 = csp_meta_tag
 = javascript_importmap_tags
-- if content_for? :javascript
-  %script{type: "module", nonce: content_security_policy_nonce}
-    = yield :javascript
 = stylesheet_link_tag "application", media: "all", "data-turbo-track" => "reload"

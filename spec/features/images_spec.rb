@@ -1,12 +1,11 @@
 require 'rails_helper'
 
-describe Image do
+describe Image, js: true do
   let(:pimage) { Image.new(2019, "1000x750", 21) }
   let(:image)  { Image.new(2019, "1000x750", 22) }
   let(:nimage) { Image.new(2019, "1000x750", 23) }
 
-
-  context "links", js: true do
+  context "links" do
     before(:each) do
       visit image.path
     end
