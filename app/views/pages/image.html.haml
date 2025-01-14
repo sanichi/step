@@ -3,14 +3,13 @@
 .row
   .col
   .col-10
-    %turbo-frame{id: "image", "data-turbo-action" => "advance"}
-      %p.text-center.mt-3
-        - if @prev
-          = link_to t("prev"), @prev.path
-          = "|"
-        = link_to @image.year, "/conference-#{@image.year}", "data-turbo-frame" => "_top"
-        - if @next
-          = "|"
-          = link_to t("next"), @next.path
-      %img#image.img-fluid.w-100{src: @image.src, alt: @image.alt}
+    %p.text-center.mt-3
+      - if @prev
+        = link_to t("prev"), @prev.path
+        = "|"
+      = link_to @image.year, "/conference-#{@image.year}"
+      - if @next
+        = "|"
+        = link_to t("next"), @next.path
+    %img#image.img-fluid.w-100{src: @image.src, alt: @image.alt}
   .col
