@@ -5,6 +5,12 @@
   .col-10
     .row
       .col-12.col-md-6.mt-5
+        - days = (Date.new(2025,2,1) - Date.today).to_i
+        - if days > 0
+          %p.text-center.border.border-primary.p-3
+            = "<b>#{pluralize(days, "day")}</b>".html_safe
+            = "left for early bird"
+            = link_to "STEP conference registration", register_path
         = link_to "https://scholar.hw.ac.uk" do
           %img.img-fluid.w-100{src: "/images/2025/scholar_480x100.png", alt: "Scholar website"}
         %p.mt-3
