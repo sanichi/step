@@ -4,7 +4,7 @@
   .col
   .col-10
     .row
-      .col-12.col-md-6.mt-5
+      .col-12.col-md-8.mt-5
         - days = (Date.new(2025,2,1) - Date.today).to_i
         - if days > 0
           %p.text-center.border.border-primary.p-3
@@ -26,6 +26,6 @@
         %h2.text-center.mt-4= link_to t("conference.title", year: 2025), conference_2025_path
         = link_to conference_2025_path do
           %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "2025 conference flyer"}
-      .col-12.col-md-6.mt-5
-        = render "twitter"
+      .col-12.col-md-4.mt-5
+        = render "facebook"
   .col
