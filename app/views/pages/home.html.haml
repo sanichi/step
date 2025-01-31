@@ -1,31 +1,15 @@
 - set_meta_tags title: t("home.title"), description: t("home.description"), keywords: t("home.keywords")
 
 .row
-  .col
-  .col-10
-    .row
-      .col-12.col-md-8.mt-5
-        - days = (Date.new(2025,2,1) - Date.today).to_i
-        - if days > 0
-          %p.text-center.border.border-primary.p-3
-            = "<b>#{pluralize(days, "day")}</b>".html_safe
-            = "left for early bird"
-            = link_to "STEP conference registration", register_path
-        = link_to "https://scholar.hw.ac.uk" do
-          %img.img-fluid.w-100{src: "/images/2025/scholar_480x100.png", alt: "Scholar website"}
-        %p.mt-3
-          = succeed(",") do
-            = link_to "Scholar", "https://scholar.hw.ac.uk"
-          the online learning resource for schools and colleges established in partnership with Heriot Watt University and ADES,
-          marks its 25th anniversary this year. Having registered more than a million learners since its creation, Scholar boasts an
-          average of 140,000 students and 15,000 teachers and lecturers registered each academic year.
-          = succeed(".") do
-            = link_to "Newsletter", "/docs/2025/scholar.pdf"
-        = link_to "/stepcast#2024-karen-watson" do
-          %img.img-fluid.w-100.mt-3{src: "/images/2024/karen_watson_800x800.jpg", alt: "Karen Watson STEPcast"}
-        %h2.text-center.mt-4= link_to t("conference.title", year: 2025), conference_2025_path
-        = link_to conference_2025_path do
-          %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "2025 conference flyer"}
-      .col-12.col-md-4.mt-5
-        = render "facebook"
-  .col
+  .col-1.col-md-2
+  .col-10.col-md-8
+    - days = (Date.new(2025,2,1) - Date.today).to_i
+    - if days > 0
+      %p.text-center.border.border-primary.p-3.mt-4
+        = "<b>#{pluralize(days, "day")}</b>".html_safe
+        = "left for early bird"
+        = link_to "STEP conference registration", register_path
+    %h2.text-center.mt-4= link_to t("conference.title", year: 2025), conference_2025_path
+    = link_to conference_2025_path do
+      %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "2025 conference flyer"}
+  .col-1.col-md-2
