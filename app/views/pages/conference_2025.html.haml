@@ -15,9 +15,5 @@
       = link_to "Workshops", "/docs/2025/workshops.pdf"
       = "|"
       = link_to "Discount Room Rate", "https://smchotelaccommodation.stir.ac.uk/Search.aspx?arrivalDate=2025-03-21&departureDate=2025-03-22&roomCount=1&location=Stirling%20Court%20Hotel&promotion=296049&people=0&l=en-GB"
-    - days = (Date.new(2025,2,1) - Date.today).to_i
-    - if days > 0
-      %p.text-center
-        = "<b>#{pluralize(days, "day")}</b> left for early bird registration fee!".html_safe
     %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "flyer"}
   .col
