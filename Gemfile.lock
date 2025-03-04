@@ -328,6 +328,7 @@ DEPENDENCIES
   listen (~> 3.2)
   meta-tags (~> 2.12)
   nokogiri
+  ostruct (~> 0.6.1)
   puma (< 7)
   rails (= 8.0.1)
   rspec-rails (< 8)
