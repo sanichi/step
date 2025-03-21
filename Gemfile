@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '8.0.1'
+gem 'rails', '8.0.2'
 gem 'haml-rails', '~> 2.0'
 gem 'sassc-rails', '~> 2.1'
 gem 'bootstrap', '~> 5.0'
@@ -11,9 +11,6 @@ gem "turbo-rails", "~> 2.0"
 
 # Temporary fix to silence warnings about gem no longer being standard library
 gem "ostruct", "~> 0.6.1"
-
-# Temporary fix because of glibc version on Alma Linux 8
-gem "nokogiri", force_ruby_platform: true
 
 group :development, :test do
   gem 'rspec-rails', '< 8'
