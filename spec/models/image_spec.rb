@@ -97,7 +97,7 @@ describe Image do
     end
 
     it "no" do
-      expect(Image.new(2025, "1000x600", 1).next).to be_nil
+      expect(Image.new(2025, "800x600", 4).next).to be_nil
     end
   end
 
