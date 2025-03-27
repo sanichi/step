@@ -9,11 +9,8 @@
       = link_to "2024", conference_2024_path
       = "|"
       = "2026"
-    %p.text-center
-      = link_to "Registration", "/register"
-      = "|"
-      = link_to "Workshops", "/docs/2025/workshops.pdf"
-      = "|"
-      = link_to "Discount Room Rate", "https://smchotelaccommodation.stir.ac.uk/Search.aspx?arrivalDate=2025-03-21&departureDate=2025-03-22&roomCount=1&location=Stirling%20Court%20Hotel&promotion=296049&people=0&l=en-GB"
+    %h4.d-inline= "Photos"
+    = render "images", year: 2025, data: { "1000x600" => 1..1 }
+    %h4.mt-3= "Flyer"
     %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "flyer"}
   .col

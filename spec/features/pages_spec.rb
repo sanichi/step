@@ -84,6 +84,11 @@ describe PagesController, js: true do
       click_link t("conference.step", year: 2024)
       expect(page).to have_title t("conference.title", year: 2024)
     end
+
+    it "2025" do
+      click_link t("conference.step", year: 2025)
+      expect(page).to have_title t("conference.title", year: 2025)
+    end
   end
 
   context "conference links" do
