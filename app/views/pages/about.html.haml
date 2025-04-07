@@ -142,8 +142,6 @@
     %p
       Professional update is a key issue for all teachers, and STEP, with its annual conference attracting a
       range of highly regarded educational speakers, has a key role to play.
-    %p
-      Registered Charity:
-      = succeed(".") do
-        = link_to "SC041390 (Scotland)", "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC041390", target: "blank"
+    = link_to "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC041390", target: "blank" do
+      %img.img-fluid.w-100{src: "/images/logos/oscr-041390.jpg", alt: "Registered Charity SC041390 (Scotland)"}
   .col
