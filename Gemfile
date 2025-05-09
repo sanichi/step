@@ -13,7 +13,7 @@ gem "turbo-rails", "~> 2.0"
 gem "ostruct", "~> 0.6.1"
 
 group :development, :test do
-  gem 'rspec-rails', '< 8'
+  gem 'rspec-rails', '< 9'
   gem 'capybara', '~> 3.28'
   gem 'byebug', platforms: :mri
   gem 'launchy'
