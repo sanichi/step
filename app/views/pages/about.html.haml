@@ -39,33 +39,15 @@
       .col
     %h2.text-center.mt-5 The STEP Committee
     .row.mt-5
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/emma_marie_may.jpg", alt: "Emma-Marie May"}
-        %p.text-center Emma-Marie May
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/carolyn_paton_2.jpg", alt: "Carolyn Paton"}
-        %p.text-center Carolyn Paton
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/jodie_mackie_2.jpg", alt: "Jodie Mackie"}
-        %p.text-center Jodie Mackie
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/rhona_robb.jpg", alt: "Rhona Robb"}
-        %p.text-center Rhona Robb
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/nuzhat_uthmani.jpg", alt: "Nuzhat Uthmani"}
-        %p.text-center Nuzhat Uthmani
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/anne_macrae.jpg", alt: "Anne Macrae"}
-        %p.text-center Anne Macrae
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/angela_allen_2.jpg", alt: "Angela Allen"}
-        %p.text-center Angela Allen
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/donal_hurley.jpg", alt: "Donal Hurley"}
-        %p.text-center Donal Hurley
-      .col-4
-        %img.img-fluid.w-100{src: "/images/people/claire_watson.jpg", alt: "Claire Watson"}
-        %p.text-center Claire Watson
+      = render "mugshot", name: "Emma-Marie May", file: "emma_marie_may"
+      = render "mugshot", name: "Carolyn Paton",  file: "carolyn_paton_2"
+      = render "mugshot", name: "Jodie Mackie",   file: "jodie_mackie_2"
+      = render "mugshot", name: "Rhona Robb",     file: "rhona_robb"
+      = render "mugshot", name: "Nuzhat Uthmani", file: "nuzhat_uthmani"
+      = render "mugshot", name: "Anne Macrae",    file: "anne_macrae"
+      = render "mugshot", name: "Angela Allen",   file: "angela_allen_2"
+      = render "mugshot", name: "Donal Hurley",   file: "donal_hurley"
+      = render "mugshot", name: "Claire Wilson",  file: "claire_watson"
     %dl.mt-5
       %dt Emma-Marie May
       %dd
