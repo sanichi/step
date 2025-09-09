@@ -28,11 +28,17 @@
             All other enquiries:
             = mail_to "committee@STeachersEP.org.uk"
           %li
-            Follow us on X:
-            = link_to "@STeachersEP", "https://x.com/steachersep", target: "blank"
-          %li
-            Follow us on Facebook:
-            = link_to "ScottishTeachersforEnhancingPractice", "https://www.facebook.com/ScottishTeachersforEnhancingPractice/", target: "blank"
+            Follow us on:
+            %ul
+              %li
+                Bluesky
+                = link_to "@steachersep.bsky.social", "https://bsky.app/profile/steachersep.bsky.social", target: "blank"
+              %li
+                Facebook
+                = link_to "ScottishTeachersforEnhancingPractice", "https://www.facebook.com/ScottishTeachersforEnhancingPractice/", target: "blank"
+              %li
+                X
+                = link_to "@STeachersEP", "https://x.com/steachersep", target: "blank"
       .col
     %h2.text-center.mt-5 The STEP Committee
     .row.mt-5
