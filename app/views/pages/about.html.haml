@@ -20,13 +20,16 @@
     .row.mt-5
       .col
       .col-12.col-sm-10.col-md-8.col-lg-6
+        %p Email
         %ul
           %li
-            Treasurer:
-            = mail_to "treasurer@STeachersEP.org.uk"
-          %li
-            All other enquiries:
+            General
             = mail_to "committee@STeachersEP.org.uk"
+          %li
+            Treasurer
+            = mail_to "treasurer@STeachersEP.org.uk"
+        %p Social Media
+        %ul
           %li
             Bluesky
             = link_to "@steachersep.bsky.social", "https://bsky.app/profile/steachersep.bsky.social", target: "blank"
