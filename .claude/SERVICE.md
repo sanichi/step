@@ -290,3 +290,106 @@ gem 'company_services', git: 'git@github.com:company/company_services.git'
 
 This approach is very common for internal company gems, shared utilities, and private business logic. Much simpler than setting up a private gem server!
 
+---
+
+**User** (*2025-10-24*)
+
+We were talking yesterday about service objects and custom gems. The conversation was recorded in .claude/SERVICE.md. Can we continue that?
+
+---
+
+**Assistant** (*2025-10-24*)
+
+## Continuing the Service Objects & Gems Discussion
+
+Today we explored practical implementation strategies for sharing service objects across multiple Rails applications using custom gems.
+
+### **Key Discussion Points:**
+
+## **Gem Organization Strategy**
+
+**Question:** Should multiple service objects go in one gem or separate gems?
+
+**Answer:** Group related services in a single gem rather than creating separate gems for each service.
+
+**When to create separate gems:**
+- Different domains (auth vs utilities vs reporting)
+- Different dependencies (heavy vs lightweight)
+- Different release cycles (stable vs experimental)
+- Different team ownership
+
+**Recommended structure:**
+```ruby
+# lib/company_utilities.rb
+module CompanyUtilities
+  autoload :SystemInfoService, 'company_utilities/system_info_service'
+  autoload :EmailValidationService, 'company_utilities/email_validation_service'
+  autoload :LogFormatterService, 'company_utilities/log_formatter_service'
+end
+```
+
+## **Implementation Plan**
+
+**Starting approach:** Begin with system information service (common across all Rails apps) as proof of concept, then expand based on experience.
+
+**Benefits of starting small:**
+- Learn gem creation workflow
+- Establish patterns and conventions
+- Prove the concept works across apps
+- Build confidence before tackling complex services
+
+## **Naming & Dependencies**
+
+**Naming strategy:** Keep gem names as short as possible (`utils`, `core`, `shared`, `common`, `base`)
+
+**Dependency management:** Gems can have their own Gemfile and gemspec for dependencies:
+
+```ruby
+# my_gem.gemspec
+spec.add_dependency "activesupport", ">= 6.0"
+spec.add_development_dependency "rspec", "~> 3.0"
+
+# Gemfile
+source 'https://rubygems.org'
+gemspec
+```
+
+**Current system info dependencies:** Minimal - just `activesupport` for `Rails.env` and optional `puma` gem.
+
+## **Views in Gems Decision**
+
+**Question:** Should Rails views be included in the gem?
+
+**Analysis of current env.html.haml:**
+- Uses app-specific Bootstrap styling
+- Has layout dependencies (grid system)
+- Contains I18n references (`t("env.title")`)
+- Uses app-specific meta tag handling
+
+**Recommendation:** Start with service object only, not views. Return structured data that each app can render according to its own design patterns:
+
+```ruby
+# In gem
+SystemInfoService.call
+# => { host: "...", ruby_version: "...", rails_version: "...", etc. }
+
+# In each app's view  
+- system_info = SystemInfoService.call
+%table.table
+  - system_info.each do |key, value|
+    %tr
+      %th= key.humanize
+      %td= value
+```
+
+This provides maximum flexibility while eliminating duplicated system introspection logic across applications.
+
+### **Next Steps:**
+
+1. Extract system info logic from existing Rails app
+2. Create gem with `bundle gem short_name --test=rspec`  
+3. Move logic into service class with proper error handling
+4. Write comprehensive tests
+5. Test locally using `path:` in Gemfile
+6. Push to GitHub and integrate across other apps
+
