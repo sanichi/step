@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def env
-    sensitive_keys = %i[host postgres user shell pwd path]
+    sensitive_keys = %i[postgres user shell pwd path]
     @sys_info = Sni::SysInfo.call.except(*sensitive_keys)
   end
 
