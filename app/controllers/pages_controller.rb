@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   def env
-    sensitive_keys = %i[postgres user shell pwd path]
-    @sys_info = Sni::SysInfo.call.except(*sensitive_keys)
+    @sys_info = Sni::SysInfo.call(database: false, sensitive: false)
   end
 
   def image

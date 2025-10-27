@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/sanichi/sni
-  revision: c00cbbd445d285c4c57818423953adec7fcc7883
+  revision: bbf490a8caf61208247028b5a0933aac59218f17
   specs:
-    sni (0.8.0)
+    sni (0.9.0)
 
 GEM
   remote: https://rubygems.org/
