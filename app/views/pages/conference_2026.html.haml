@@ -4,7 +4,7 @@
   .col
   .col-10
     %h2.text-center.mt-5= t("conference.step", year: 2026)
-    %p.text-center Stirling, Saturday 14th March
+    %p.text-center Stirling Court Hotel, Saturday 14th March
     %p.text-center
       = link_to "2025", conference_2025_path
       = "|"
@@ -15,6 +15,9 @@
       = "2027"
     -# %h4.d-inline= "Photos"
     -# = render "images", year: 2026, data: { "600x800" => 1..4, "800x600" => 1..4 }
-    -# %h4.mt-3= "Flyer"
-    -# %img.img-fluid.w-100{src: "/images/2026/flyer_938x700.jpg", alt: "flyer"}
+    .row
+      .col-2
+      .col-8
+        %img.img-fluid.w-100{src: "/images/2026/flyer_848x1200.jpg", alt: "flyer"}
+      .col-2
   .col
