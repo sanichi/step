@@ -1,11 +1,11 @@
 - set_meta_tags title: t("home.title"), description: t("home.description"), keywords: t("home.keywords")
 
 .row
-  .col-2.col-md-3
-  .col-8.col-md-6
+  .col-1.col-md-2.col-lg-3
+  .col-10.col-md-8.col-lg-6
     -# %h2.text-center.mt-4= link_to t("conference.title", year: 2026), conference_2026_path
     %p
     = link_to conference_2026_path do
       %img.img-fluid.w-100{src: "/images/2026/flyer_848x1200.jpg", alt: "2026 conference flyer"}
     = render "social"
-  .col-2.col-md-3
+  .col-1.col-md-2.col-lg-3
