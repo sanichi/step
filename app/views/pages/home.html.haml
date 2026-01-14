@@ -3,10 +3,8 @@
 .row
   .col-1.col-md-2
   .col-10.col-md-8
-    = link_to "/stepcast#2025-khadija-mohammed" do
-      %img.img-fluid.w-100.mt-4{src: "/images/2025/khadija_mohammed_860x800.jpg", alt: "Khadija Mohammed STEPcast"}
-    %h2.text-center.mt-4= link_to t("conference.title", year: 2025), conference_2025_path
-    = link_to conference_2025_path do
-      %img.img-fluid.w-100{src: "/images/2025/flyer_v2_938x700.jpg", alt: "2025 conference flyer"}
+    %h2.text-center.mt-4= link_to t("conference.title", year: 2026), conference_2026_path
+    -# = link_to conference_2026_path do
+    -#   %img.img-fluid.w-100{src: "/images/2026/flyer_938x700.jpg", alt: "2026 conference flyer"}
     = render "social"
   .col-1.col-md-2

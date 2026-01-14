@@ -89,6 +89,11 @@ describe PagesController, js: true do
       click_link t("conference.step", year: 2025)
       expect(page).to have_title t("conference.title", year: 2025)
     end
+
+    # it "2026" do
+    #   click_link t("conference.step", year: 2026)
+    #   expect(page).to have_title t("conference.title", year: 2026)
+    # end
   end
 
   context "conference links" do
@@ -119,10 +124,14 @@ describe PagesController, js: true do
       expect(page).to have_title t("conference.title", year: 2024)
       click_link "2025"
       expect(page).to have_title t("conference.title", year: 2025)
+      click_link "2026"
+      expect(page).to have_title t("conference.title", year: 2026)
     end
 
     it "backward" do
-      visit conference_2025_path
+      visit conference_2026_path
+      expect(page).to have_title t("conference.title", year: 2026)
+      click_link "2025"
       expect(page).to have_title t("conference.title", year: 2025)
       click_link "2024"
       expect(page).to have_title t("conference.title", year: 2024)

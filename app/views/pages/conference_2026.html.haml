@@ -1,0 +1,20 @@
+- set_meta_tags title: t("conference.title", year: 2026), description: t("conference.description", year: 2026), keywords: t("conference.keywords", year: 2026)
+
+.row
+  .col
+  .col-10
+    %h2.text-center.mt-5= t("conference.step", year: 2026)
+    %p.text-center Stirling, Saturday 22nd March
+    %p.text-center
+      = link_to "2025", conference_2025_path
+      = "|"
+      = link_to "Register", register_path
+      = "|"
+      = link_to "Workshops", "/docs/2026/workshops.pdf"
+      = "|"
+      = "2027"
+    -# %h4.d-inline= "Photos"
+    -# = render "images", year: 2026, data: { "600x800" => 1..4, "800x600" => 1..4 }
+    -# %h4.mt-3= "Flyer"
+    -# %img.img-fluid.w-100{src: "/images/2026/flyer_938x700.jpg", alt: "flyer"}
+  .col
