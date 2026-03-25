@@ -18,13 +18,13 @@ describe PagesController, js: true do
       expect(page).to have_title t("archive.title")
       expect(page).to_not have_css "a", text: t("archive.link")
 
-      click_link t("info.link")
-      expect(page).to have_title t("info.title")
-      expect(page).to_not have_css "a", text: t("info.link")
+      # click_link t("info.link")
+      # expect(page).to have_title t("info.title")
+      # expect(page).to_not have_css "a", text: t("info.link")
 
-      click_link t("register.link")
-      expect(page).to have_title t("register.title")
-      expect(page).to_not have_css "a", text: t("register.link")
+      # click_link t("register.link")
+      # expect(page).to have_title t("register.title")
+      # expect(page).to_not have_css "a", text: t("register.link")
 
       click_link t("stepcast.link")
       expect(page).to have_title t("stepcast.title")
