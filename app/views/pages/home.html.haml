@@ -4,8 +4,18 @@
   .col-1.col-md-2.col-lg-3
   .col-10.col-md-8.col-lg-6
     -# %h2.text-center.mt-4= link_to t("conference.title", year: 2026), conference_2026_path
-    %p
-    = link_to conference_2026_path do
-      %img.img-fluid.w-100{src: "/images/2026/cancelled_848x1200.png", alt: "2026 conference flyer"}
-    = render "social"
+    %p.mt-5
+      %span.fw-bold= "STEP is closing down."
+      After more than a decade supporting Scottish teachers in enhancing their professional practice
+      — first as the Association of Chartered Teachers Scotland and, since March 2014, as Scottish
+      Teachers for Enhancing Practice — the organisation held its final AGM in March 2026.
+      The committee wishes to thank every member, speaker, and supporter who contributed to STEP's
+      mission to create an open community of enquiring practitioners and promote reflective practice
+      across Scotland's teaching profession. This website will remain available for a while as an
+      = link_to "archive", archive_path
+      of that work.
+    -# %p
+    -# = link_to conference_2026_path do
+    -#   %img.img-fluid.w-100{src: "/images/2026/cancelled_848x1200.png", alt: "2026 conference flyer"}
+    -# = render "social"
   .col-1.col-md-2.col-lg-3

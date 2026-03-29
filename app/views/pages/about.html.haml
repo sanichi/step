@@ -15,91 +15,91 @@
           %li To promote reflective practice in the teaching profession.
           %li To sustain the development of professional learning for the benefit of all learners.
       .col
-    %h2.text-center.mt-5 Contact Us
-    %img.img-fluid.w-100.mt-5{src: "/images/misc/contact_1200x500.jpg", alt: "contact us"}
-    .row.mt-5
-      .col
-      .col-12.col-sm-10.col-md-8.col-lg-6
-        %p Email
-        %ul
-          %li
-            General
-            = mail_to "committee@STeachersEP.org.uk"
-          %li
-            Treasurer
-            = mail_to "treasurer@STeachersEP.org.uk"
-        %p Social Media
-        %ul
-          %li
-            Bluesky
-            = link_to "@steachersep.bsky.social", "https://bsky.app/profile/steachersep.bsky.social", target: "blank"
-          %li
-            FB
-            = link_to "ScottishTeachersforEnhancingPractice", "https://www.facebook.com/ScottishTeachersforEnhancingPractice/", target: "blank"
-          %li
-            X
-            = link_to "@STeachersEP", "https://x.com/steachersep", target: "blank"
-      .col
-    %h2.text-center.mt-5 The STEP Committee
-    .row.mt-5
-      = render "mugshot", name: "Emma-Marie May", file: "emma_marie_may"
-      = render "mugshot", name: "Carolyn Paton",  file: "carolyn_paton_2"
-      = render "mugshot", name: "Jodie Mackie",   file: "jodie_mackie_3"
-      = render "mugshot", name: "Rhona Robb",     file: "rhona_robb"
-      = render "mugshot", name: "Nuzhat Uthmani", file: "nuzhat_uthmani"
-      = render "mugshot", name: "Anne Macrae",    file: "anne_macrae"
-      = render "mugshot", name: "Angela Allen",   file: "angela_allen_2"
-      = render "mugshot", name: "Donal Hurley",   file: "donal_hurley"
-      = render "mugshot", name: "Claire Wilson",  file: "claire_watson"
-    %dl.mt-5
-      %dt Emma-Marie May
-      %dd
-        Chairperson, trustee.
-        Teacher working in Secure and Residential Care.
-        I have a love of football, pilates and spending time with family.
-      %dt Carolyn Paton
-      %dd
-        Treasurer, trustee.
-        Primary School Teacher, North Lanarkshire Council.
-        I came to my first STEP conference as a probationer and left the AGM as the Treasurer, about 9 years ago.
-      %dt Jodie Mackie
-      %dd
-        Secretary.
-        Biology Teacher with South Ayrshire Council for over 7 years and now working in Pupil Support.
-        STEP Committee Member from 2018.
-      %dt Rhona Robb
-      %dd
-        Trustee.
-        Primary school teacher working in Complex Learning Needs within Glasgow City Council.
-      %dt Nuzhat Uthmani
-      %dd
-        Trustee.
-        Former Principal Teacher in Primary and currently is a Lecturer in ITE at the University of Stirling.
-        I specialise in global citizenship education with particular expertise in antiracism and decolonial pedagogies.
-      %dt Anne Macrae
-      %dd
-        Member.
-        Based in Applecross, Wester Ross, Anne has almost 40 years experience in education, teaching in Highland Schools at Lochcarron, Ullapool and Torridon.
-        My work has covered all age groups including early years preschool and Nursery class up to Youth aged 12-25 years old.
-        Having been a Teaching Head for over 20 years, I have a special interest in Scotland‘s small rural schools, local culture and heritage, outdoor learning, teaching languages including Gaelic and international education.
-      %dt Angela Allen
-      %dd
-        Member.
-        Qualified Teacher of Deaf Children and Young People. Renfrewshire Council.
-      %dt Donal Hurley
-      %dd
-        Member. Irishman. Retired teacher of Maths and Physics, most recently at Alva Academy, Clackmannanshire.
-        Previously taught elsewhere in Central Scotland; Glenalmond College, Perthshire and 11 years in the UAE, both in an international school and at UAE University.
-        Have also taught Computing, Logic, Theory of Knowledge and Music.
-      %dt Claire Watson
-      %dd
-        Member.
-        Currently in my second year of being a fully qualified teacher in West Lothian.
-        I am a secondary Biology teacher with an interest in additional support needs.
-        This year in addition to STEP I am doing an MA in Special and Inclusive Education with Queen Margaret University
-        and a course in AI and data in secondary education because I love learning.
-      %dt Caroline Maloney
-      %dd Conference Administrator.
+    -# %h2.text-center.mt-5 Contact Us
+    -# %img.img-fluid.w-100.mt-5{src: "/images/misc/contact_1200x500.jpg", alt: "contact us"}
+    -# .row.mt-5
+    -#   .col
+    -#   .col-12.col-sm-10.col-md-8.col-lg-6
+    -#     %p Email
+    -#     %ul
+    -#       %li
+    -#         General
+    -#         = mail_to "committee@STeachersEP.org.uk"
+    -#       %li
+    -#         Treasurer
+    -#         = mail_to "treasurer@STeachersEP.org.uk"
+    -#     %p Social Media
+    -#     %ul
+    -#       %li
+    -#         Bluesky
+    -#         = link_to "@steachersep.bsky.social", "https://bsky.app/profile/steachersep.bsky.social", target: "blank"
+    -#       %li
+    -#         FB
+    -#         = link_to "ScottishTeachersforEnhancingPractice", "https://www.facebook.com/ScottishTeachersforEnhancingPractice/", target: "blank"
+    -#       %li
+    -#         X
+    -#         = link_to "@STeachersEP", "https://x.com/steachersep", target: "blank"
+    -#   .col
+    -# %h2.text-center.mt-5 The STEP Committee
+    -# .row.mt-5
+    -#   = render "mugshot", name: "Emma-Marie May", file: "emma_marie_may"
+    -#   = render "mugshot", name: "Carolyn Paton",  file: "carolyn_paton_2"
+    -#   = render "mugshot", name: "Jodie Mackie",   file: "jodie_mackie_3"
+    -#   = render "mugshot", name: "Rhona Robb",     file: "rhona_robb"
+    -#   = render "mugshot", name: "Nuzhat Uthmani", file: "nuzhat_uthmani"
+    -#   = render "mugshot", name: "Anne Macrae",    file: "anne_macrae"
+    -#   = render "mugshot", name: "Angela Allen",   file: "angela_allen_2"
+    -#   = render "mugshot", name: "Donal Hurley",   file: "donal_hurley"
+    -#   = render "mugshot", name: "Claire Wilson",  file: "claire_watson"
+    -# %dl.mt-5
+    -#   %dt Emma-Marie May
+    -#   %dd
+    -#     Chairperson, trustee.
+    -#     Teacher working in Secure and Residential Care.
+    -#     I have a love of football, pilates and spending time with family.
+    -#   %dt Carolyn Paton
+    -#   %dd
+    -#     Treasurer, trustee.
+    -#     Primary School Teacher, North Lanarkshire Council.
+    -#     I came to my first STEP conference as a probationer and left the AGM as the Treasurer, about 9 years ago.
+    -#   %dt Jodie Mackie
+    -#   %dd
+    -#     Secretary.
+    -#     Biology Teacher with South Ayrshire Council for over 7 years and now working in Pupil Support.
+    -#     STEP Committee Member from 2018.
+    -#   %dt Rhona Robb
+    -#   %dd
+    -#     Trustee.
+    -#     Primary school teacher working in Complex Learning Needs within Glasgow City Council.
+    -#   %dt Nuzhat Uthmani
+    -#   %dd
+    -#     Trustee.
+    -#     Former Principal Teacher in Primary and currently is a Lecturer in ITE at the University of Stirling.
+    -#     I specialise in global citizenship education with particular expertise in antiracism and decolonial pedagogies.
+    -#   %dt Anne Macrae
+    -#   %dd
+    -#     Member.
+    -#     Based in Applecross, Wester Ross, Anne has almost 40 years experience in education, teaching in Highland Schools at Lochcarron, Ullapool and Torridon.
+    -#     My work has covered all age groups including early years preschool and Nursery class up to Youth aged 12-25 years old.
+    -#     Having been a Teaching Head for over 20 years, I have a special interest in Scotland‘s small rural schools, local culture and heritage, outdoor learning, teaching languages including Gaelic and international education.
+    -#   %dt Angela Allen
+    -#   %dd
+    -#     Member.
+    -#     Qualified Teacher of Deaf Children and Young People. Renfrewshire Council.
+    -#   %dt Donal Hurley
+    -#   %dd
+    -#     Member. Irishman. Retired teacher of Maths and Physics, most recently at Alva Academy, Clackmannanshire.
+    -#     Previously taught elsewhere in Central Scotland; Glenalmond College, Perthshire and 11 years in the UAE, both in an international school and at UAE University.
+    -#     Have also taught Computing, Logic, Theory of Knowledge and Music.
+    -#   %dt Claire Watson
+    -#   %dd
+    -#     Member.
+    -#     Currently in my second year of being a fully qualified teacher in West Lothian.
+    -#     I am a secondary Biology teacher with an interest in additional support needs.
+    -#     This year in addition to STEP I am doing an MA in Special and Inclusive Education with Queen Margaret University
+    -#     and a course in AI and data in secondary education because I love learning.
+    -#   %dt Caroline Maloney
+    -#   %dd Conference Administrator.
     %img.img-fluid.w-100.mt-5{src: "/images/misc/history_1200x500.jpg", alt: "our aims"}
     %p.mt-5
       In 2014, the teachers behind the Association of Chartered Teachers Scotland (ACTS) stepped into the future
